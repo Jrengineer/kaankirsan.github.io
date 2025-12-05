@@ -241,14 +241,17 @@ a:hover {
     padding-right: var(--spacing-lg);
     margin-left: auto;
     margin-right: auto;
+    position: relative;
+    z-index: 2;
 }
 
 .hero-content h1 {
-    color: rgb(255, 255, 255);
+    color: #ffffff;
     font-size: var(--font-size-5xl);
     margin-bottom: var(--spacing-md);
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
     font-weight: var(--font-weight-bold);
+    opacity: 1;
 }
 
 .hero-subtitle {
@@ -257,6 +260,7 @@ a:hover {
     margin-bottom: var(--spacing-lg);
     font-weight: var(--font-weight-semibold);
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    opacity: 1;
 }
 
 .hero-tagline {
@@ -265,21 +269,31 @@ a:hover {
     font-weight: var(--font-weight-semibold);
     margin-bottom: var(--spacing-xl);
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    opacity: 1;
 }
 
 .hero-description {
-    color: rgb(255, 255, 255);
+    color: #ffffff;
     font-size: var(--font-size-lg);
     margin-bottom: var(--spacing-2xl);
     line-height: var(--line-height-relaxed);
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
     font-weight: var(--font-weight-semibold);
+    opacity: 1;
 }
 
 .cta-buttons {
     display: flex;
     gap: var(--spacing-md);
     flex-wrap: wrap;
+    position: relative;
+    z-index: 3;
+}
+
+.cta-buttons .btn {
+    position: relative;
+    z-index: 3;
+    pointer-events: auto;
 }
 
 .hero-image {
