@@ -1,26 +1,26 @@
 /* CSS Variables - Color Scheme, Typography, Spacing */
 
 :root {
-    /* Primary Colors - Purple Theme */
-    --primary-dark: #2d1b4e;
-    --primary-color: #6b4fa1;
-    --secondary-color: #a855b8;
-    --accent-color: #d8b4fe;
+    /* Primary Colors - GitHub-Inspired Professional Theme */
+    --primary-dark: #0d1117;
+    --primary-color: #1f6feb;
+    --secondary-color: #238636;
+    --accent-color: #58a6ff;
 
     /* Neutral Colors */
     --bg-white: #ffffff;
-    --bg-light: #f3e8ff;
-    --bg-dark: #2d1b4e;
-    --text-primary: #1f2937;
-    --text-secondary: #4b5563;
-    --text-light: #9ca3af;
-    --border-color: #e9d5ff;
+    --bg-light: #f6f8fa;
+    --bg-dark: #0d1117;
+    --text-primary: #24292f;
+    --text-secondary: #57606a;
+    --text-light: #8b949e;
+    --border-color: #d0d7de;
 
     /* Semantic Colors */
-    --success: #27ae60;
-    --warning: #f39c12;
-    --danger: #e74c3c;
-    --info: #3498db;
+    --success: #238636;
+    --warning: #d29922;
+    --danger: #da3633;
+    --info: #0969da;
 
     /* Typography */
     --font-heading: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -94,11 +94,11 @@
 /* Dark Mode Support */
 @media (prefers-color-scheme: dark) {
     :root {
-        --bg-white: #1f1830;
-        --bg-light: #3d2557;
-        --text-primary: #f3e8ff;
-        --text-secondary: #e9d5ff;
-        --text-light: #d8b4fe;
-        --border-color: #7c3aed;
+        --bg-white: #0d1117;
+        --bg-light: #161b22;
+        --text-primary: #c9d1d9;
+        --text-secondary: #8b949e;
+        --text-light: #6e7681;
+        --border-color: #30363d;
     }
 }
