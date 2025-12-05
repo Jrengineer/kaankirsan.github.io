@@ -128,13 +128,13 @@ a:hover {
 }
 
 .logo-icon {
-    width: 32px;
-    height: 32px;
+    width: 48px;
+    height: 48px;
     object-fit: contain;
     transition: transform var(--transition-normal);
     background-color: var(--primary-color);
     border-radius: 50%;
-    padding: 8px;
+    padding: 10px;
     box-shadow: 0 2px 8px rgba(31, 111, 235, 0.3);
 }
 
@@ -204,7 +204,7 @@ a:hover {
     background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%),
                 url('../images/hero-bg.jpg') no-repeat center right;
     background-size: cover;
-    background-position: 65% center;
+    background-position: 72% center;
     background-blend-mode: overlay;
     color: var(--bg-white);
     min-height: 100vh;
@@ -239,19 +239,23 @@ a:hover {
     z-index: 2;
     max-width: var(--container-max-width);
     margin: 0 auto;
-    padding-left: var(--spacing-3xl);
+    padding-left: calc(var(--spacing-3xl) + 40px);
 }
 
 .hero-content {
     max-width: 550px;
     padding-right: var(--spacing-2xl);
+    margin-left: 20px;
 }
 
 .hero-content h1 {
     color: rgba(255, 255, 255, 1);
     font-size: var(--font-size-5xl);
     margin-bottom: var(--spacing-md);
-    text-shadow: 4px 4px 12px rgba(0, 0, 0, 0.9), 2px 2px 6px rgba(0, 0, 0, 1);
+    text-shadow: 0 0 20px rgba(0, 0, 0, 1),
+                 0 0 40px rgba(0, 0, 0, 0.9),
+                 4px 4px 16px rgba(0, 0, 0, 1),
+                 2px 2px 8px rgba(0, 0, 0, 1);
     font-weight: var(--font-weight-bold);
 }
 
@@ -260,15 +264,21 @@ a:hover {
     font-size: var(--font-size-2xl);
     margin-bottom: var(--spacing-lg);
     font-weight: var(--font-weight-semibold);
-    text-shadow: 4px 4px 12px rgba(0, 0, 0, 0.9), 2px 2px 6px rgba(0, 0, 0, 1);
+    text-shadow: 0 0 20px rgba(0, 0, 0, 1),
+                 0 0 40px rgba(0, 0, 0, 0.9),
+                 4px 4px 16px rgba(0, 0, 0, 1),
+                 2px 2px 8px rgba(0, 0, 0, 1);
 }
 
 .hero-tagline {
     color: rgba(88, 166, 255, 1);
     font-size: var(--font-size-lg);
-    font-weight: var(--font-weight-medium);
+    font-weight: var(--font-weight-semibold);
     margin-bottom: var(--spacing-xl);
-    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.9), 2px 2px 4px rgba(0, 0, 0, 1);
+    text-shadow: 0 0 20px rgba(0, 0, 0, 1),
+                 0 0 35px rgba(0, 0, 0, 0.9),
+                 3px 3px 14px rgba(0, 0, 0, 1),
+                 2px 2px 6px rgba(0, 0, 0, 1);
 }
 
 .hero-description {
@@ -276,8 +286,11 @@ a:hover {
     font-size: var(--font-size-lg);
     margin-bottom: var(--spacing-2xl);
     line-height: var(--line-height-relaxed);
-    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.9), 2px 2px 4px rgba(0, 0, 0, 1);
-    font-weight: var(--font-weight-medium);
+    text-shadow: 0 0 20px rgba(0, 0, 0, 1),
+                 0 0 35px rgba(0, 0, 0, 0.9),
+                 3px 3px 14px rgba(0, 0, 0, 1),
+                 2px 2px 6px rgba(0, 0, 0, 1);
+    font-weight: var(--font-weight-semibold);
 }
 
 .cta-buttons {

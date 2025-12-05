@@ -26,7 +26,7 @@
     .hero {
         min-height: auto;
         padding: var(--spacing-2xl) var(--spacing-md);
-        background-position: center center;
+        background-position: 72% center;
     }
 
     .hero .container {
@@ -35,6 +35,7 @@
 
     .hero-content {
         padding-right: 0;
+        margin-left: 0;
     }
 
     .hero::before {
@@ -76,9 +77,9 @@
     }
 
     .logo-icon {
-        width: 28px;
-        height: 28px;
-        padding: 6px;
+        width: 40px;
+        height: 40px;
+        padding: 8px;
     }
 
     .hamburger {
@@ -127,7 +128,7 @@
     .hero {
         min-height: calc(100vh - 70px);
         padding: var(--spacing-xl) var(--spacing-md);
-        background-position: 70% center;
+        background-position: 72% center;
     }
 
     .hero .container {
@@ -137,6 +138,7 @@
     .hero-content {
         max-width: 100%;
         padding-right: 0;
+        margin-left: 0;
     }
 
     .hero::before {
@@ -249,9 +251,9 @@
     }
 
     .logo-icon {
-        width: 24px;
-        height: 24px;
-        padding: 5px;
+        width: 36px;
+        height: 36px;
+        padding: 7px;
     }
 
     h1 { font-size: var(--font-size-2xl); }
