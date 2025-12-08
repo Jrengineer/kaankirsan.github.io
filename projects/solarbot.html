@@ -47,7 +47,7 @@
             <div class="project-header">
                 <span class="project-badge-large">Robotics</span>
                 <h1 class="project-title">Autonomous Solar Panel Cleaning Robot</h1>
-                <p class="project-summary">Architected full-stack robotics solution featuring autonomous navigation with real-time obstacle detection and avoidance using OAK-D depth cameras and SLAM algorithms. Implemented computer vision pipeline for solar panel detection achieving 95%+ accuracy using YOLOv8 with custom training dataset and transfer learning. Designed mobile application for real-time telemetry monitoring, mission planning, and remote robot control with cloud integration.</p>
+                <p class="project-summary">Autonomous robot for solar panel cleaning with 85%+ autonomy achievement. Features depth cameras for obstacle detection, SLAM for navigation and environment mapping, 95%+ accuracy solar panel detection with YOLO, and human-following capability. Battery system with Smart BMS integration.</p>
             </div>
 
             <div class="project-metrics-grid">
@@ -71,21 +71,18 @@
     <section class="project-content-section">
         <div class="container">
             <h2 class="section-heading">Project Overview</h2>
-            <div class="content-grid">
-                <div class="content-block">
-                    <h3>Challenge</h3>
-                    <p>Solar panel efficiency degrades significantly due to dust, dirt, and debris accumulation, reducing energy output by up to 25%. Manual cleaning is labor-intensive, dangerous, and inefficient for large-scale solar installations. The industry needed an autonomous solution that could navigate complex solar farm environments safely while performing precision cleaning operations.</p>
-                </div>
-                <div class="content-block">
-                    <h3>Solution</h3>
-                    <p>Developed a fully autonomous robotic platform integrating cutting-edge computer vision, SLAM navigation, and mobile app control. The robot autonomously identifies solar panels, plans optimal cleaning paths, detects and avoids obstacles in real-time, and reports mission progress through a cloud-connected mobile application accessible from anywhere.</p>
-                </div>
-            </div>
-
             <div class="content-full">
-                <h3>Technical Approach</h3>
-                <p>The system architecture combines NVIDIA Jetson Orin Nano for high-performance AI inference with OAK-D stereo depth cameras providing real-time 3D environmental understanding. Custom YOLOv8 models were trained on 5,000+ annotated images of solar panels in various conditions, achieving 95%+ detection accuracy across different lighting conditions, panel angles, and environmental scenarios.</p>
-                <p>SLAM (Simultaneous Localization and Mapping) algorithms enable the robot to build real-time maps of solar farm layouts while tracking its precise position within the environment. The navigation stack implements dynamic path planning that adapts to moving obstacles, terrain changes, and mission requirements, ensuring safe and efficient operation in complex industrial settings.</p>
+                <h3>What I Built</h3>
+                <p>Autonomous navigation system using OAK-D depth cameras for real-time obstacle detection and avoidance. SLAM algorithms map the environment while the robot navigates. Computer vision pipeline with YOLOv5/v8 detects solar panels with 95%+ accuracy. Flutter mobile app provides real-time telemetry and remote control. Battery management system with Smart BMS handles power distribution and monitoring.</p>
+
+                <h3>Key Achievements</h3>
+                <ul>
+                    <li>85%+ autonomous operation rate in field testing</li>
+                    <li>95%+ solar panel detection accuracy with YOLO</li>
+                    <li>Real-time environment mapping with SLAM</li>
+                    <li>Human-following capability for manual guidance</li>
+                    <li>Mobile app for monitoring and control via Flutter</li>
+                </ul>
             </div>
         </div>
     </section>
@@ -96,39 +93,34 @@
             <h2 class="section-heading">Technology Stack</h2>
             <div class="tech-stack-grid">
                 <div class="tech-category">
-                    <h4>Hardware & Computing</h4>
+                    <h4>Hardware</h4>
                     <div class="tech-list">
-                        <span class="tech-tag-detail">NVIDIA Jetson Orin Nano</span>
-                        <span class="tech-tag-detail">OAK-D Depth Camera</span>
-                        <span class="tech-tag-detail">Custom Motor Controllers</span>
-                        <span class="tech-tag-detail">IMU Sensors</span>
+                        <span class="tech-tag-detail">Jetson Nano</span>
+                        <span class="tech-tag-detail">OAK-D Camera</span>
+                        <span class="tech-tag-detail">Smart BMS</span>
                     </div>
                 </div>
                 <div class="tech-category">
-                    <h4>Computer Vision & AI</h4>
-                    <div class="tech-list">
-                        <span class="tech-tag-detail">YOLOv5/v8</span>
-                        <span class="tech-tag-detail">OpenCV</span>
-                        <span class="tech-tag-detail">TensorFlow</span>
-                        <span class="tech-tag-detail">Custom ML Pipeline</span>
-                    </div>
-                </div>
-                <div class="tech-category">
-                    <h4>Navigation & Control</h4>
-                    <div class="tech-list">
-                        <span class="tech-tag-detail">SLAM Algorithms</span>
-                        <span class="tech-tag-detail">ROS 2</span>
-                        <span class="tech-tag-detail">Path Planning</span>
-                        <span class="tech-tag-detail">Obstacle Avoidance</span>
-                    </div>
-                </div>
-                <div class="tech-category">
-                    <h4>Software Development</h4>
+                    <h4>Computer Vision</h4>
                     <div class="tech-list">
                         <span class="tech-tag-detail">Python</span>
-                        <span class="tech-tag-detail">C++</span>
-                        <span class="tech-tag-detail">Flutter (Mobile App)</span>
-                        <span class="tech-tag-detail">Cloud Integration</span>
+                        <span class="tech-tag-detail">OpenCV</span>
+                        <span class="tech-tag-detail">YOLOv5/v8</span>
+                        <span class="tech-tag-detail">SLAM</span>
+                    </div>
+                </div>
+                <div class="tech-category">
+                    <h4>Communication</h4>
+                    <div class="tech-list">
+                        <span class="tech-tag-detail">RS-485</span>
+                        <span class="tech-tag-detail">UDP</span>
+                    </div>
+                </div>
+                <div class="tech-category">
+                    <h4>Software</h4>
+                    <div class="tech-list">
+                        <span class="tech-tag-detail">Flutter</span>
+                        <span class="tech-tag-detail">Linux</span>
                     </div>
                 </div>
             </div>
@@ -142,27 +134,19 @@
             <div class="highlights-grid">
                 <div class="highlight-card">
                     <h4>Autonomous Navigation</h4>
-                    <p>Real-time SLAM-based navigation with dynamic obstacle detection and avoidance, enabling safe operation in complex solar farm environments with minimal human intervention.</p>
+                    <p>SLAM-based navigation with OAK-D depth cameras for real-time obstacle detection and environment mapping.</p>
                 </div>
                 <div class="highlight-card">
-                    <h4>Computer Vision Pipeline</h4>
-                    <p>Custom-trained YOLOv8 model achieving 95%+ accuracy in solar panel detection across varying lighting conditions, panel types, and environmental factors.</p>
+                    <h4>Computer Vision</h4>
+                    <p>YOLOv5/v8 achieving 95%+ accuracy in solar panel detection across different conditions.</p>
                 </div>
                 <div class="highlight-card">
-                    <h4>Mobile App Integration</h4>
-                    <p>Cross-platform Flutter application providing real-time telemetry, mission planning, remote control capabilities, and comprehensive operational analytics.</p>
+                    <h4>Mobile Control</h4>
+                    <p>Flutter app for real-time telemetry monitoring and remote robot control.</p>
                 </div>
                 <div class="highlight-card">
-                    <h4>Field-Proven Reliability</h4>
-                    <p>Successfully completed 150+ field test cycles across diverse terrain and weather conditions, demonstrating robust performance and 85% autonomous operation success rate.</p>
-                </div>
-                <div class="highlight-card">
-                    <h4>Scalable Architecture</h4>
-                    <p>Modular software design enabling easy integration of additional sensors, cleaning mechanisms, and functionality for future expansion and customization.</p>
-                </div>
-                <div class="highlight-card">
-                    <h4>Cloud Connectivity</h4>
-                    <p>Real-time data synchronization with cloud services for fleet management, performance monitoring, maintenance scheduling, and operational insights.</p>
+                    <h4>Human Following</h4>
+                    <p>Person tracking capability for manual guidance mode when needed.</p>
                 </div>
             </div>
         </div>

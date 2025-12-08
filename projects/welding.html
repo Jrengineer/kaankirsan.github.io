@@ -46,22 +46,22 @@
         <div class="container">
             <div class="project-header">
                 <span class="project-badge-large">Automation</span>
-                <h1 class="project-title">Welding Robot and Positioners</h1>
-                <p class="project-summary">Led end-to-end integration of collaborative ABB robot with precision motor positioning system using Delta ASDA-A2/B2 servo drives and multi-axis control. Coordinated cross-functional engineering teams to deliver significant production improvements through advanced automation and predictive maintenance capabilities.</p>
+                <h1 class="project-title">ABB Welding Robot Integration</h1>
+                <p class="project-summary">End-to-end integration of ABB collaborative robot with precision positioner. Dry-relay communication, real-time position feedback, PID tuning, safety interlocks. HMI with alarm logging. Predictive maintenance with auto-tuning reduced downtime 35% and extended equipment lifecycle.</p>
             </div>
 
             <div class="project-metrics-grid">
                 <div class="metric-card">
-                    <span class="metric-value">40%</span>
-                    <span class="metric-label">Efficiency Improvement</span>
-                </div>
-                <div class="metric-card">
-                    <span class="metric-value">25%</span>
-                    <span class="metric-label">Faster Cycle Times</span>
-                </div>
-                <div class="metric-card">
                     <span class="metric-value">35%</span>
-                    <span class="metric-label">Less Downtime</span>
+                    <span class="metric-label">Downtime Reduction</span>
+                </div>
+                <div class="metric-card">
+                    <span class="metric-value">PID</span>
+                    <span class="metric-label">Auto-Tuning</span>
+                </div>
+                <div class="metric-card">
+                    <span class="metric-value">S7-1200</span>
+                    <span class="metric-label">Siemens PLC</span>
                 </div>
             </div>
         </div>
@@ -71,21 +71,18 @@
     <section class="project-content-section">
         <div class="container">
             <h2 class="section-heading">Project Overview</h2>
-            <div class="content-grid">
-                <div class="content-block">
-                    <h3>Challenge</h3>
-                    <p>The existing welding cell lacked precision motor positioning capabilities, resulting in inconsistent weld quality, longer cycle times, and frequent manual interventions. The system required integration of advanced servo motor controls with the ABB robot while maintaining safety standards and minimizing production downtime during implementation.</p>
-                </div>
-                <div class="content-block">
-                    <h3>Solution</h3>
-                    <p>Engineered a comprehensive motor control system integrating Delta ASDA servo drives with Siemens S7-1200 PLC, implementing real-time position feedback, PID tuning, and predictive maintenance algorithms. Developed a sophisticated HMI interface with comprehensive diagnostics, operator controls, and alarm management for improved operational efficiency.</p>
-                </div>
-            </div>
-
             <div class="content-full">
-                <h3>Technical Approach</h3>
-                <p>The integration project began with detailed system analysis and mechanical design verification to ensure compatibility between the ABB robot workspace and the new motor positioning system. Multi-axis servo control was implemented using Delta ASDA-A2/B2 drives, providing precise position, velocity, and torque control with microsecond-level timing accuracy.</p>
-                <p>Custom PLC logic in Siemens TIA Portal coordinated the ABB robot movements with servo motor positioning, implementing safety interlocks, emergency stop integration, and comprehensive fault diagnostics. The predictive maintenance system monitors servo performance metrics, detects anomalies, and schedules preventive maintenance before failures occur, reducing unplanned downtime by 35%.</p>
+                <h3>What I Built</h3>
+                <p>Integrated ABB collaborative robot with precision positioner using Siemens S7-1200 PLC. Implemented dry-relay communication for robot control. Real-time position feedback with Veichi SD700 servo drives over Profinet and Modbus RS-485. PID auto-tuning for optimal performance. Safety interlocks and emergency stop logic. HMI with alarm logging and diagnostics. Predictive maintenance algorithms reduced downtime 35%.</p>
+
+                <h3>Key Achievements</h3>
+                <ul>
+                    <li>End-to-end robot integration with positioner</li>
+                    <li>35% reduction in unplanned downtime</li>
+                    <li>PID auto-tuning for extended equipment lifecycle</li>
+                    <li>Real-time position feedback via Profinet</li>
+                    <li>Comprehensive HMI with alarm logging</li>
+                </ul>
             </div>
         </div>
     </section>
@@ -96,39 +93,32 @@
             <h2 class="section-heading">Technology Stack</h2>
             <div class="tech-stack-grid">
                 <div class="tech-category">
-                    <h4>PLC & Control</h4>
+                    <h4>PLC</h4>
                     <div class="tech-list">
                         <span class="tech-tag-detail">Siemens S7-1200</span>
                         <span class="tech-tag-detail">TIA Portal</span>
-                        <span class="tech-tag-detail">SCL Programming</span>
-                        <span class="tech-tag-detail">Safety Logic</span>
                     </div>
                 </div>
                 <div class="tech-category">
-                    <h4>Motor Control</h4>
+                    <h4>Drives</h4>
                     <div class="tech-list">
-                        <span class="tech-tag-detail">Delta ASDA-A2/B2</span>
-                        <span class="tech-tag-detail">Servo Drives</span>
-                        <span class="tech-tag-detail">Multi-Axis Control</span>
-                        <span class="tech-tag-detail">PID Tuning</span>
-                    </div>
-                </div>
-                <div class="tech-category">
-                    <h4>HMI & Visualization</h4>
-                    <div class="tech-list">
-                        <span class="tech-tag-detail">WinCC</span>
-                        <span class="tech-tag-detail">C# Scripting</span>
-                        <span class="tech-tag-detail">Alarm Management</span>
-                        <span class="tech-tag-detail">Data Logging</span>
+                        <span class="tech-tag-detail">Veichi SD700</span>
+                        <span class="tech-tag-detail">PID Control</span>
                     </div>
                 </div>
                 <div class="tech-category">
                     <h4>Communication</h4>
                     <div class="tech-list">
-                        <span class="tech-tag-detail">Modbus RTU/TCP</span>
                         <span class="tech-tag-detail">Profinet</span>
-                        <span class="tech-tag-detail">Industrial Ethernet</span>
+                        <span class="tech-tag-detail">Modbus</span>
                         <span class="tech-tag-detail">RS-485</span>
+                    </div>
+                </div>
+                <div class="tech-category">
+                    <h4>Robot</h4>
+                    <div class="tech-list">
+                        <span class="tech-tag-detail">ABB Cobot</span>
+                        <span class="tech-tag-detail">Dry Relay</span>
                     </div>
                 </div>
             </div>
