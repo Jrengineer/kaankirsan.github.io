@@ -90,7 +90,7 @@ kaankirsan.github.io/
 
 ## Deployment
 
-The website is automatically deployed to GitHub Pages when changes are pushed to the main branch.
+The website is deployed to GitHub Pages.
 
 Live site: https://kaankirsan.github.io
 
